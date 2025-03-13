@@ -14,14 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-
-      - name: Cache SonarCloud packages
-        uses: actions/cache@v2
-        with:
-          path: ~/.sonar/cache
-          key: ${{ runner.os }}-sonar
-          restore-keys: ${{ runner.os }}-sonar
-
       - name: Install SonarCloud scanner
         run: |
           sudo apt-get install -y nodejs npm
