@@ -28,5 +28,5 @@ jobs:
           -Dsonar.projectKey=larriojas_GitWeb \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.scm.disabled=true \
-          -Dsonar.sources=. \
+          -Dsonar.sources=/home/runner/work/GitWeb \
           -Dsonar.login=${{ secrets.SONAR_TOKEN }} 
