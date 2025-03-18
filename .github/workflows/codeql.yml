@@ -27,4 +27,5 @@ jobs:
           -Dsonar.organization=larriojas \
           -Dsonar.projectKey=larriojas_GitWeb \
           -Dsonar.host.url=https://sonarcloud.io \
+          -Dsonar.scm.provider=git \
           -Dsonar.login=${{ secrets.SONAR_TOKEN }} 
